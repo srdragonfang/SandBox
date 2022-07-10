@@ -1,0 +1,10 @@
+.class-animation {
+    animation: example 5s linear 2s infinite alternate; /* Animation Shorthand Property */
+    animation-name: animation-title;
+    animation-duration: 4s;
+    animation-delay: 2s; /* có thê có số âm */
+    animation-iteration-count: 3; /* value number : infinite */
+    animation-direction: reverse; /* normal - reverse - alternate - alternate-reverse */
+    animation-timing-function: ease; /* ease - linear - ease-in - ease-out - ease-in-out - cubic-bezier(n,n,n,n) */
+    animation-fill-mode: none;
+  }
