@@ -1,0 +1,19 @@
+body{
+    font-family: sans-serif;
+}
+
+.bg-text{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.article-text{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.normal-text{
+    font-size: 13px;
+    font-weight: 400;
+}

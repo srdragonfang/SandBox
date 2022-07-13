@@ -1,0 +1,132 @@
+.form__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sign__in-bg {
+  background: var(--clr-light);
+  width: 100vw;
+  overflow-y: hidden;
+  position: relative;
+}
+.signIn__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.signin__box {
+  z-index: 1;
+  position: fixed;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: max-content;
+}
+@media screen and (max-width: 1366px) {
+  .signin__box {
+    top: 10%;
+  }
+}
+@media screen and (max-height: 1050px) {
+  .signin__box {
+    top: 20%;
+  }
+}
+
+.signin__box form {
+  padding: var(--pd-base);
+  text-align: center;
+  align-items: center;
+  font-size: var(--fnt-txt);
+  color: var(--clr-dark);
+  z-index: 101;
+}
+.signUp__box {
+  margin: 0 4rem 0 0;
+}
+.form__1 {
+  box-shadow: var(--box-shadow-out);
+}
+
+@media screen and (max-width: 768px) {
+  .signin__box form {
+    width: 100%;
+  }
+}
+
+.signin__box form input::placeholder {
+  color: goldenrod;
+  opacity: 70%;
+}
+/* .input_cl3 {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: var(--fnt-txt);
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+} */
+.signin__box input[type="text"] {
+  text-transform: uppercase;
+  color: goldenrod;
+}
+.signin__box input[type="email"] {
+  color: goldenrod;
+}
+
+.signin__box input[type="password"] {
+  color: goldenrod;
+}
+
+.signin__box-child_l1 {
+  box-shadow: var(--box-shadow-out);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signin__box-child_l2 {
+  transition: ease-in-out 1s all;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: var(--clr-dark);
+  height: max-content;
+}
+.login__quote {
+  margin: var(--mg-base);
+}
+
+.login__quote p {
+  font-size: var(--fnt-txt);
+  font-style: italic;
+  letter-spacing: 3px;
+  color: var(--clr-dark);
+  text-shadow: 4px 4px 16px #191919;
+  text-align: center;
+}
+
+.signin__box-child_l3 {
+  width: 100%;
+  justify-content: space-around;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .signin__box-child_l3 {
+    padding: 0 1rem 0 1rem;
+  }
+}
