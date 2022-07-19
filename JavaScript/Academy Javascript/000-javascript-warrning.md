@@ -1,0 +1,2 @@
+**Những điều cần tránh trong JavaScript (những phần xấu)**
+[https://tech-wiki.online/vn/things-to-avoid-in-javascript-bad-parts.html](https://tech-wiki.online/vn/things-to-avoid-in-javascript-bad-parts.html)

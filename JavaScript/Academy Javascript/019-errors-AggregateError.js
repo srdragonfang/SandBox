@@ -1,0 +1,1 @@
+AggregateError() // - Lỗi Tổng Hợp // ex: promise.any()
