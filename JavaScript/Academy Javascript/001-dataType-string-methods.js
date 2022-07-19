@@ -46,15 +46,44 @@ console.log(reversedWord) // "elppa"
 
 // ANCHOR 6. Cách viết hoa chữ cái đầu tiên trong chuỗi
 
+let word4 = 'apply'
+word4 = word4[0].toUpperCase() + word4.substr(1)
+console.log(word4) // "Apple"
+
+// // This shows an alternative way
+
+// let word = "apple";
+
+// const characters = [...word];
+// characters[0] = characters[0].toUpperCase();
+// word = characters.join("");
+
+// console.log(word); // "Apple"
 
 // ANCHOR 7. Cách tách một chuỗi trên nhiều dấu phân cách
-
+// Giả sử chúng ta muốn chia chuỗi trên dấu phân cách, điều đầu tiên ai ai cũng nghĩ đến là làm thế nào để sử dụng split(), đương nhiên ai cũng phải biết điều này. Tuy nhiên, có một điều bạn có thể không biết là split bạn có thể chia nhiều dấu phân cách cùng một lúc, sử dụng biểu thức chính quy để đạt được điều này
+const list = "apples,bananas;cherries"
+const fruits = list.split(/[,;]/)
+console.log(fruits); // ["apples", "bananas", "cherries"]
 
 // ANCHOR 8. Cách kiểm tra xem một chuỗi có chứa một chuỗi cụ thể hay không
 
+const text = "Hello, world! My name is Kai!"
+console.log(text.includes("Kai")); // true
 
 // ANCHOR 9. Cách kiểm tra xem một chuỗi bắt đầu hay kết thúc bằng một chuỗi cụ thể
 
+const text1 = "Hello, world! My name is Kai!"
+
+console.log(text1.startsWith("Hello")); // true
+
+console.log(text1.endsWith("world")); // false
 
 // ANCHOR 10. Cách thay thế tất cả các lần xuất hiện của chuỗi
 
+const text2 = "I like apples. You like apples."
+
+console.log(text2.replace(/apples/g, "bananas"));
+// "I like bananas. You like bananas."
+
+console.log(text2.replaceAll("apples", "bananas"));
