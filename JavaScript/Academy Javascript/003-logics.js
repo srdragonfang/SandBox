@@ -16,3 +16,5 @@ case 0:                         // if (day == 0)
 default:                        // else...
 	text = "Whatever";
 } 
+// ! Trong switch việc sử dụng toán tử === phán đoán bình đẳng nội bộ
+// NOTE *** Không sử dụng các điều kiện phủ định nó sẽ gây nhầm lẫn rất nhiều trong khi triển khai code. 

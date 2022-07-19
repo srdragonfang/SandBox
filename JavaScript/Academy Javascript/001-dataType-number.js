@@ -1,84 +1,8 @@
-// ANCHOR JAVASCRIPT GUILDLINE
-e.curentTarget();
-// ANCHOR Data Type
-// ## **Variablesx**
-
-
-var a;                          // variable
-var b = "init";                 // string
-var c = "Hi" + " " + "Joe";     // = "Hi Joe"
-var d =1 +2 + "3";            // = "33"
-var e = [2,3,5,8];              // array
-var f =false;                  // boolean
-var g = /()/;                   // RegEx
-varh = function(){};           // function object
-const PI =3.14;                // constant
-var a =1, b =2, c = a + b;    // one line
-let z = 'zzz';                  // block scope local variable
-
-// ### **Strict mode**
-
-
-"use strict";   // Use strict mode to write secure code
-x =1;          // Throws an error because variable is not declared
-
-
-// ### **Values**
-false,true                     // boolean
-18,3.14, 0b10011,0xF6,NaN    // number
-"flower", 'John'                // string
-undefined,null ,Infinity      // special
-
 // ### **Operators**
 a = b + c - d;      // addition, substraction
 a = b * (c / d);    // multiplication, division
 x =100 %48;       // modulo. 100 / 48 remainder = 4
 a++; b--;           // postfix increment and decrement
-
-// NOTE *** STRING
-// toUpperCase() = ignore upper and lowercase
-strings.UpperCase();
-// .toLowerCase() → in thường
-
-// trim string
-strings.trim();
-
-// string + string
-function strings(a, b) {
-	return a.toString() + b.toString();
-}
-// string - string
-strings.slice(indexStart, indexEnd);
-// string - replace = hay thế một từ, hoặc câu (từ cần thay thế, từ thay thế)
-var str = 'Visit Microsoft!';
-var res = str.replace('Microsoft', 'Phambinh.net');
-//Output: Visit Phambinh.net
-// strings
-// \' = single quote
-// \" = double quote
-// \\ = blackslash
-// \n = newline
-// \r = carriage return
-// \t = tab
-// \b = word boundary
-// \f = form feed
-
-// number  
-var age = 18;                           
-// string 
-var name = "Jane";                      
-// object 
-var name = {first:"Jane", last:"Doe"};  
-// boolean 
-var truth = false;                      
-// array 
-var sheets = ["HTML","CSS","JS"];       
-// undefined 
-var a; 
-typeof a;                        
-// value null
-var a = null;                           
-
 
 // NOTE *** number
 // NOTE *** number *** Math
