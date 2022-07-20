@@ -219,3 +219,7 @@ Chuỗi JSON được bắt đầu bằng ký tự { và kết thúc bởi ký t
 JSON.parse() -> object javascript
 JSON.stringify(object) -> JSON string
 https://hocjavascript.net/json/truyen-du-lieu-json-voi-javascript/
+
+
+### AJAX
+AJAX là chữ viết tắt của Asynchronous JavaScript and XML. Nó là một bộ các kỹ thuật thiết kế web giúp cho các ứng dụng web hoạt động bất đồng bộ – xử lý mọi yêu cầu tới server từ phía sau. Chà, khoan bối rối nhé, chúng tôi sẽ giải thích từng thuật ngữ một cho bạn biết AJAX là gì.

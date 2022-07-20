@@ -1,11 +1,13 @@
 // ANCHOR If - Else⇵
+```js
 if ((age >= 14) && (age < 19)) {        // logical condition
 statusAge = "Eligible.";               // executed if condition is true
 } else {                                // else block is optional
 statusAge = "Not eligible.";           // executed if condition is false
 }
-
+```
 // ANCHOR Switch Statement
+```js
 switch (new Date().getDay()) {      // input is current day
 case 6:                         // if (day == 6)
 	text = "Saturday";          
@@ -16,5 +18,6 @@ case 0:                         // if (day == 0)
 default:                        // else...
 	text = "Whatever";
 } 
-// ! Trong switch việc sử dụng toán tử === phán đoán bình đẳng nội bộ
-// NOTE *** Không sử dụng các điều kiện phủ định nó sẽ gây nhầm lẫn rất nhiều trong khi triển khai code. 
+```
+Trong switch việc sử dụng toán tử === phán đoán bình đẳng nội bộ
+<!-- ! Không sử dụng các điều kiện phủ định nó sẽ gây nhầm lẫn rất nhiều trong khi triển khai code.  -->
