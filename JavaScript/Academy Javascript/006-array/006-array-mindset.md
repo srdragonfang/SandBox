@@ -1,0 +1,5 @@
+- Lọc số lẽ
+- Lọc số chẳn
+- Thay thế phần tử trong mảng.
+- Add qua mảng mới.
+- Cập nhật phần tử trong mảng.

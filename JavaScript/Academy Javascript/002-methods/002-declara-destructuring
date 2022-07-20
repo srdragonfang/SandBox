@@ -1,0 +1,3 @@
+const str = "1986, cr7, boy, 35"
+const {1: namea, 2: sex, 0: age} = str.split(',')
+console.log(namea, sex, age) // cr7 boy 1986
