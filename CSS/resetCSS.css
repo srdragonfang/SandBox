@@ -1,0 +1,68 @@
+* {
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+  body {
+    background-color: whitesmoke;
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 18px black;
+    color: whitesmoke;
+  }
+  @media (max-width: 460px) {
+      h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+      }
+    }
+  h2 {
+    color: gray;
+    font-size: 1rem;
+    font-style: italic;
+  }
+  h4 {
+    text-align: right;
+    font-style: italic;
+    color: #2d2d2d;
+  }
+  blockquote {
+    color: gray;
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+  }
+  blockquote p {
+    text-align: right;
+  }
+  section blockquote {
+      border-bottom: groove 3px gray;
+  }
+  main {
+    margin: 3rem;
+    padding: 3rem;
+    box-shadow: 2px 2px 8px #2d2d2d;
+    width: 786px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    display: block;
+    max-width: 679px;
+    width: 100%;
+    height: auto;
+    align-content: center;
+    background-color: black;
+  }
+  figcaption {
+    background-color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+  }
+  a {
+      text-decoration: none;
+  }
+  
