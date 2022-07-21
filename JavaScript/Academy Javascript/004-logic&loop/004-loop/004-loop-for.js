@@ -19,3 +19,4 @@ for (let i = 0; i < arr.length; i++) {
 // JS Loop For In
 
 // JS Loop For Of
+console.log('SRDF-test: arr', arr, 'font-size: 16px; background: brown; color: #fff')

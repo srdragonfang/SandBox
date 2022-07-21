@@ -1,0 +1,19 @@
+{
+  "name": "0015---sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srdragonfang/SandBox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srdragonfang/SandBox/issues"
+  },
+  "homepage": "https://github.com/srdragonfang/SandBox#readme",
+  "description": ""
+}
