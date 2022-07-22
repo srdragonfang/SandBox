@@ -1,1 +1,2 @@
 border: none; -> border: 0;
+
