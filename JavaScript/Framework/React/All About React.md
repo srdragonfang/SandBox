@@ -1,3 +1,4 @@
+- [Custom Hook](#custom-hook)
 Một gia đình A nọ.
 
 Có:
@@ -453,3 +454,6 @@ Hook useReducer được sử dụng để xử lý các state phức tạp và 
 const [state, dispatch] = useReducer(reducer, initialArg, init);
 ```
 Tất cả các hooks mà được giới thiệu ở trên, sẽ được giới thiệu chi tiết và ví dụ cụ thể ở loạt bài viết tiếp theo.
+
+<!-- custom hook -->
+# custom hook

@@ -18,3 +18,17 @@ ANCHOR * [Cách tạo một object]
         - ***Constructor function*** là  một trong số những cách thông dụng nhất để tạo một Javascript object phụ thuộc vào việc kế thừa prototype nhằm giúp các chức năng trở nên hữu dụng.
         - Mấu chốt của những function dạng này là chúng có thể được thực thể hóa (instantiation) và được kế thừa (inherited).
     - Prototyping inheritance
+    
+    
+// xóa một key ra khỏi object
+const obj1 = {
+	name: "sokunm",
+	title: "late"
+}
+// xóa name khỏi obj1
+var {name, ...newObje} = obj1
+
+// copy 2 object
+const obj1 = {}
+const obj2 = {}
+var obj3 = {...obj1, ...obj2}
