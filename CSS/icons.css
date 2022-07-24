@@ -1,0 +1,19 @@
+.icons i,
+.icons a {
+	cursor: pointer;
+	margin-left: 0.5rem;
+	height: 4.5rem;
+	line-height: 4.5rem;
+	width: 4.5rem;
+	text-align: center;
+	font-size: 1.7rem;
+	color: var(--clr-dark);
+	border-radius: 50%;
+	background: #eeeeee;
+}
+.icons i:hover,
+.icons a:hover {
+	color: var(--clr-light);
+	background: var(--clr-dark);
+	transform: rotate(360deg);
+}

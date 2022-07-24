@@ -1,20 +1,56 @@
+
 /*Ipad ngang(1024 x 768)*/
+
 @media screen and (max-width: 1024px){
 
 }
+
 /*Ipad dọc(768 x 1024)*/
+
 @media screen and (max-width: 768px){
 
 }
+
 /*Tablet nhỏ(480 x 640)*/
+
 @media screen and (max-width: 480px){
 
 }
+
 /*Iphone(480 x 640)*/
+
 @media screen and (max-width: 320px){
 
 }
+
 /*Smart phone nhỏ*/
+
 @media screen and (max-width: 240px){
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+
+} 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+
+} 
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+
+} 
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
 
 }

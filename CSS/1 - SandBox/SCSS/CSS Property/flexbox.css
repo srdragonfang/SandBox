@@ -1,0 +1,9 @@
+.flexCSS {
+    display: flex;
+    flex-direction: column; /* row, column-reverse, row-reverse */
+    /* flex-flow */
+    /* flex-grow: ; */
+    /* flex-wrap: ; */
+    /* flex-shrink: ; */
+    /* flex-basis: ; */
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			header {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 1rem 3rem;
+				/* padding: var(--padding-default); */
+				box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+				/* height: var(--header-height); */
+				z-index: 1000;
+			}
+
+			/* header > logo */
+			header .logo {
+				color: var(--clr-dark);
+				font-size: 2.5rem;
+				font-weight: bolder;
+			}
+			/* header .logo i */
+			header .navbar a {
+				margin-right: 1rem;
+				font-size: 1.7rem;
+				border-radius: 0.5rem;
+				padding: 0.5rem 1.5rem;
+				color: var(--clr-dark);
+			}
+			header .navbar a.active,
+			header .navbar a:hover {
+				background: var(--clr-dark);
+				color: var(--clr-light);
+			}
+			.header-icons i,
+			.header-icons a {
+				cursor: pointer;
+				margin-left: 0.5rem;
+				height: 4.5rem;
+				line-height: 4.5rem;
+				width: 4.5rem;
+				text-align: center;
+				font-size: 1.7rem;
+				color: var(--clr-dark);
+				border-radius: 50%;
+				background: #eeeeee;
+			}
+			.icons i:hover,
+			.icons a:hover {
+				color: var(--clr-light);
+				background: var(--clr-dark);
+				transform: rotate(360deg);
+			}
+			.header-icons #menu-bars {
+				display: none;
+			}
+			@media screen and (max-width: 768px) {
+				.navbar {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					right: 0;
+					background: var(--clr-light);
+					border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+					border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+					padding: 1rem;
+					z-index: 1001;
+					clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+				}
+				.navbar.active {
+					clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+				}
+				.navbar a {
+					display: block;
+					padding: 1.5rem;
+					margin: 1rem;
+					font-size: 2rem;
+					background: var(--clr-light-sub);
+				}
+				.header-icons #menu-bars {
+					display: inline-block;
+				}
+			}
+		</style>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<script
+			src="https://kit.fontawesome.com/80ea5533be.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header>
+			<!-- header > logo -->
+			<a href="#" class="logo"> <i>L</i> Name-brand </a>
+			<!-- header > navbar -->
+			<nav class="navbar">
+				<a href="#item-1" class="active">item-1</a>
+				<a href="#item-2">item-2</a>
+				<a href="#item-3">item-3</a>
+				<a href="#item-4">item-4</a>
+			</nav>
+
+			<div class="header-icons">
+				<i class="fas fa-search icon" id="search-icon"></i>
+				<a href="" class="fas fa-heart"></a>
+				<a href="#" class="fas fa-shopping-cart"></a>
+				<i class="fa-solid fa-bars icon" id="menu-bars"></i>
+			</div>
+
+			<form action="" id="search-form">
+				<input
+					type="search"
+					name=""
+					placeholder="search..."
+					id="search-box"
+				/>
+				<label for="search-box" class="fas fa-search"></label>
+				<i class="fas fa-times" id="close"></i>
+			</form>
+		</header>
+		<script>
+			let menu = document.querySelector('#menu-bars');
+			let navbar = document.querySelector('.navbar');
+
+			menu.onclick = () => {
+				menu.classList.toggle('fa-times');
+				navbar.classList.toggle('active');
+			};
+
+			window.onscroll = () => {
+				menu.classList.remove('fa-times');
+				navbar.classList.remove('active');
+			};
+
+			let searchForm = document.querySelector('#search-form');
+			let searchIcon = document.querySelector('#search-icon');
+			let closeBtn = document.querySelector('#close');
+
+			searchIcon.onclick = () => {
+				searchForm.classList.toggle('active');
+			};
+			closeBtn.onclick = () => {
+				searchForm.classList.remove('active');
+			};
+		</script>
+	</body>
+</html>
