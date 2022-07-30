@@ -1,0 +1,1 @@
+Editor: Word Wrap // on
