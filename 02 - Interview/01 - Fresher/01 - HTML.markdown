@@ -1,9 +1,15 @@
 <style type="text/css">
     details {
-    /* background-color: #f9f9f9; */
-    /* color: #191919; */
     font-size: 14px;
     line-height: 1.5;
+    }
+    textarea {
+        resize: none; 
+        font-size: 16px; 
+        line-height: normal; 
+        padding: 1rem;
+        background: transparent;
+        color: #fff;
     }
 </style>
 
@@ -16,6 +22,9 @@
 # Tag Name
 
 ### Điểm khác nhau của thẻ `<span>` và `<div>` là gì?
+
+<textarea cols="40" rows="5"></textarea>
+</textarea>
 
 <details>
 
@@ -36,6 +45,9 @@ Ví dụ:
 ---
 
 ### Các thẻ Meta là gì?
+
+<textarea cols="40" rows="5">
+</textarea>
 
 <details>
 Thẻ meta là các đoạn văn bản mô tả nội dung của trang; các thẻ meta không xuất hiện trên chính trang mà chỉ xuất hiện trong mã nguồn của trang.
@@ -60,6 +72,9 @@ Ví dụ:
 
 ### HTML là gì?
 
+<textarea cols="40" rows="5">
+</textarea>
+
 <details>
    HTML viết tắt của Hyper Text Markup Language (ngôn ngữ đánh dấu siêu văn bản). Nó là một ngôn ngữ của World Wide Web. Đây là một ngôn ngữ định dạng văn bản chuẩn được sử dụng để tạo và hiển thị các trang trên Web.
 
@@ -68,6 +83,9 @@ Ví dụ:
 ---
 
 ### Thẻ HTML là gì?
+
+<textarea cols="40" rows="5">
+</textarea>
 
 <details>
 
@@ -85,14 +103,21 @@ Trong đó, nội dung được đặt giữa các thẻ để hiển thị dữ
 
 ### Có phải tất cả các thẻ HTML đều có thẻ đóng?
 
+<textarea cols="40" rows="5">
+</textarea>
+
 <details>
 
 Không. Có một vài thẻ trong html mà không cần phải đóng thẻ ví dụ thẻ `<image>, <br>, <hr>...`
+
 </details>
 
 ---
 
 ### Các danh sách phổ biến được sử dụng khi thiết kế một trang là gì?
+
+<textarea cols="40" rows="5">
+</textarea>
 
 <details>
 Có nhiều danh sách phổ biến được sử dụng để thiết kế một trang. Có loại danh sách sau đây:
@@ -109,11 +134,20 @@ Danh sách định nghĩa
 
 ### Sự khác nhau giữa các phần tử và các thẻ trong HTML
 
+<textarea cols="40" rows="5">
+</textarea>
+
 <details>
    Các thành phần HTML giao tiếp với trình duyệt để hiển thị văn bản. Khi các phần tử được bao quanh bởi dấu ngoặc, chúng sẽ tạo thành các thẻ HTML. Hầu như mọi lúc, các thẻ đi theo cặp và có nội dung bên trong.
+<textarea cols="40" rows="5">
+</textarea>
+
 <details>
 
 ### HTML ngữ nghĩa là gì?
+
+   <textarea cols="40" rows="5">
+   </textarea>
 
    <details>
    HTML ngữ nghĩa là một kiểu code. Đó là việc sử dụng các thẻ HTML để củng cố ngữ nghĩa hoặc ý nghĩa của nội dung. Ví dụ: Trong thẻ ngữ nghĩa HTML <b> </b> không được sử dụng để hiển thị dòng chữ đậm, cũng như thẻ <i> </i> không được sử dụng để hiển thị cho chữ nghiêng. Thay vào đó chúng ta sử dụng các thẻ <strong></strong> and <em></em>.
@@ -123,6 +157,9 @@ Danh sách định nghĩa
 
 ### Bản đồ hình ảnh là gì?
 
+<textarea cols="40" rows="5">
+</textarea>
+
 <details>
    Bản đồ hình ảnh cho phép bạn liên kết nhiều trang web khác nhau bằng một hình ảnh duy nhất. Bạn có thể định nghĩa mỗi phần của một bản đồ hình ảnh là các hình dạng khác nhau.
 </details>
@@ -130,6 +167,9 @@ Danh sách định nghĩa
 ---
 
 8. Làm thế nào để chèn một biểu tượng bản quyền vào trang web?
+   <textarea cols="40" rows="5">
+   </textarea>
+
  <details>
     Có thể chèn một biểu tượng bản quyền bằng cách sử dụng &copy; or &#169; vào file HTML
  </details>
@@ -137,6 +177,9 @@ Danh sách định nghĩa
 ---
 
 9. Làm thế nào để giữ các phẩn tử danh sách thẳng trong file HTML?
+<textarea cols="40" rows="5">
+</textarea>
+
     <details>
     Bạn có thể giữ các phẩn tử danh sách thẳng bằng cách sử dụng indent.
  </details>
@@ -144,6 +187,9 @@ Danh sách định nghĩa
 ---
 
 10. Một siêu liên kết (hyperlink) chỉ áp dụng cho văn bản đúng không?
+    <textarea cols="40" rows="5">
+    </textarea>
+
 <details>
     Không. Siêu liên kết được áp dụng cho cả văn bản và hình ảnh.
 </details>
@@ -151,6 +197,9 @@ Danh sách định nghĩa
 ---
 
 11. Style sheet là gì?
+    <textarea cols="40" rows="5">
+    </textarea>
+
 <details>
 Một style sheet được sử dụng để xây dựng kiểu dáng thích hợp, thiết kế tốt cho trang web. Bạn có thể thêm các mẫu này vào một số trang web khác nhau.
 </details>
@@ -159,13 +208,23 @@ Một style sheet được sử dụng để xây dựng kiểu dáng thích h�
 
 ### Bạn có thể tạo một văn bản nhiều màu trên một trang web?
 
+<textarea cols="40" rows="5">
+</textarea>
+
 <details>
-    Có. Để tạo văn bản nhiều màu trên một trang web bạn có thể sử dụng thẻ <font color ="color"> </font> cho từng văn bản cụ thể mà bạn muốn.
+Có. Để tạo văn bản nhiều màu trên một trang web bạn có thể sử dụng thẻ font cho từng văn bản cụ thể mà bạn muốn.
+
+```html
+    <font color ="color"></font> 
+```
 </details>
 
 ---
 
 ### Marquee là gì?
+
+  <textarea cols="40" rows="5">
+  </textarea>
 
   <details>
     Thẻ marquee trong HTML không phải là một thẻ HTML tiêu chuẩn, được sử dụng để di chuyển chữ hoặc ảnh theo chiều ngang hoặc dọc một cách tự động. Có nghĩa là bạn có thể làm cho chữ hoặc ảnh di chuyển lên trên, xuống dưới, sang trái, sang phải một cách tự động.
@@ -174,6 +233,9 @@ Một style sheet được sử dụng để xây dựng kiểu dáng thích h�
 ---
 
 14. Có bao nhiêu thẻ được sử dụng để phân tách các đoạn văn?
+    <textarea cols="40" rows="5">
+    </textarea>
+
 <details>
     Có ba thẻ được sử dụng để tách văn bản. Thẻ <br> thường được sử dụng để xuống dòng, các thẻ khác là <p> và <blockquote>
 </details>
@@ -194,6 +256,9 @@ Thay thế "image.jpg" thành đường dẫn đến hình ảnh của bạn.
 
 ### Các phần tử rỗng là gì?
 
+<textarea cols="40" rows="5">
+</textarea>
+
 <details>
 Phần tử HTML không có nội dung được gọi là phần tử rỗng. 
 Ví dụ `<br>, <hr>,...`
@@ -204,6 +269,9 @@ Ví dụ `<br>, <hr>,...`
 ### Thẻ span được sử dụng làm gì? Lấy một ví dụ.
 
 #tag
+
+<textarea cols="40" rows="5">
+</textarea>
 
 <details>
 Thẻ span là thẻ trung tính được sử dụng làm những việc sau:
@@ -224,6 +292,9 @@ Ví dụ:
 
 ### Sử dụng thẻ iframe để làm gì?
 
+<textarea cols="40" rows="5">
+</textarea>
+
 <details>
 Thẻ iframe được sử dụng để hiển thị một trang web trong một trang web khác.
 
@@ -242,6 +313,9 @@ Thẻ iframe được sử dụng để hiển thị một trang web trong một
 
 ### Canvas trong HTML 5 là gì?
 
+<textarea cols="40" rows="5">
+</textarea>
+
 <details>
 Canvas là một khoảng trống HTML được sử dụng để vẽ đồ họa.
 </details>
@@ -249,6 +323,9 @@ Canvas là một khoảng trống HTML được sử dụng để vẽ đồ h�
 # Document Objects Model
 
 ### DOM trong HTML là gì?
+
+<textarea cols="40" rows="5">
+</textarea>
 
 <details>
     DOM (The Document Object Model) là một giao diện lập trình cho các document HTML. Nó đại diện cho trang để các chương trình có thể thay đổi cấu trúc, kiểu và nội dung của tài liệu. DOM đại diện cho tài liệu dưới dạng các nút và đối tượng.
