@@ -1,18 +1,17 @@
+<style type="text/css">
+    details {
+    /* background-color: #f9f9f9; */
+    /* color: #191919; */
+    font-size: 14px;
+    line-height: 1.5;
+    }
+</style>
+
 <div align="center">
     <h1>HTML</h1>
 </div>
 
-# HTML
-
-# Document Objects Model
-
-### DOM trong HTML là gì?
-
-<details>
-    DOM (The Document Object Model) là một giao diện lập trình cho các document HTML. Nó đại diện cho trang để các chương trình có thể thay đổi cấu trúc, kiểu và nội dung của tài liệu. DOM đại diện cho tài liệu dưới dạng các nút và đối tượng.
-</details>
-
----
+# <div align="center" style="font-size: 16px; font-weight: bold; color: red;">HTML</div>
 
 # Tag Name
 
@@ -89,7 +88,6 @@ Trong đó, nội dung được đặt giữa các thẻ để hiển thị dữ
 <details>
 
 Không. Có một vài thẻ trong html mà không cần phải đóng thẻ ví dụ thẻ `<image>, <br>, <hr>...`
-
 </details>
 
 ---
@@ -194,50 +192,66 @@ Thay thế "image.jpg" thành đường dẫn đến hình ảnh của bạn.
 
 ---
 
-16. Các phần tử rỗng là gì?
-    Phần tử HTML không có nội dung được gọi là phần tử rỗng. Ví dụ <br>, <hr>,...
+### Các phần tử rỗng là gì?
 
-17. Thẻ span được sử dụng làm gì? Lấy một ví dụ.
-    Thẻ span là thẻ trung tính được sử dụng làm những việc sau:
-
-Để thêm màu vào văn bản.
-Để thêm nền trên văn bản.
-Đánh dấu bất kỳ văn bản bằng màu nào. vv
-Ví dụ:
-
-?
-1
-2
-3
-4
-5
-
-<p>  
-  <span style="color:#ffffff;">  
-    Sử dung thẻ span thay đổi màu văn bản.
-  </span>  
-</p>  
+<details>
+Phần tử HTML không có nội dung được gọi là phần tử rỗng. 
+Ví dụ `<br>, <hr>,...`
 </details>
 
 ---
 
-### Sử dụng thẻ iframe để làm gì?
-<details>
-Thẻ iframe được sử dụng để hiển thị một trang web trong một trang web khác.
+### Thẻ span được sử dụng làm gì? Lấy một ví dụ.
 
+#tag
+
+<details>
+Thẻ span là thẻ trung tính được sử dụng làm những việc sau:
+Để thêm màu vào văn bản.
+Để thêm nền trên văn bản.
+Đánh dấu bất kỳ văn bản bằng màu nào. vv
+Ví dụ:
 ```html
-<!-- Cấu trúc: -->
-<iframe src="URL"></iframe>  
-<!-- Ví dụ: -->
-<iframe src="demo_iframe.html" width="200px" height="200px"></iframe>
-<!-- Target đến một liên kết: -->
-<iframe src="" name="iframe_a"></iframe>
+<p>  
+  <span style="color:#ffffff;">  
+    Sử dung thẻ span thay đổi màu văn bản.
+  </span>  
+</p>
 ```
 </details>
 
 ---
 
+### Sử dụng thẻ iframe để làm gì?
+
+<details>
+Thẻ iframe được sử dụng để hiển thị một trang web trong một trang web khác.
+
+```html
+<!-- Cấu trúc: -->
+<iframe src="URL"></iframe>
+<!-- Ví dụ: -->
+<iframe src="demo_iframe.html" width="200px" height="200px"></iframe>
+<!-- Target đến một liên kết: -->
+<iframe src="" name="iframe_a"></iframe>
+```
+
+</details>
+
+---
+
 ### Canvas trong HTML 5 là gì?
+
 <details>
 Canvas là một khoảng trống HTML được sử dụng để vẽ đồ họa.
 </details>
+
+# Document Objects Model
+
+### DOM trong HTML là gì?
+
+<details>
+    DOM (The Document Object Model) là một giao diện lập trình cho các document HTML. Nó đại diện cho trang để các chương trình có thể thay đổi cấu trúc, kiểu và nội dung của tài liệu. DOM đại diện cho tài liệu dưới dạng các nút và đối tượng.
+</details>
+
+---
