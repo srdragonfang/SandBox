@@ -1,0 +1,136 @@
+@use '../globals' as g;
+@use '../util/' as u;
+
+// start -- [appTodo]
+.section-two {
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-todo {
+	& p span {
+		font-style: italic;
+	}
+	& h1 {
+		text-align: center;
+
+        & span {
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+				serif !important;
+		}
+	}
+	& .todoApp {
+		@include g.flexbox(column, none);
+		font-weight: 500;
+		margin-top: 1rem;
+		border-radius: 5px;
+
+		& .todoApp-container {
+			flex: 1;
+			@include g.flexbox(column, none);
+
+			& .todoList {
+				width: 400px;
+				height: 400px;
+				padding: 1rem 0.5rem;
+				overflow-y: scroll;
+
+				@include g.flexbox(column, none);
+			}
+
+		}
+	}
+}
+
+.todo {
+	width: 100%;
+	text-align: left;
+	background-color: rgba(142, 197, 252, 0.5);
+	background-image: linear-gradient(62deg, rgba(142, 197, 252, 0.5) 0%, rgba(224, 195, 252, 0.5) 100%);
+	box-shadow: 2px 2px 2px #191919;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	@include g.flexbox(row, space-between);
+	&:hover {
+		transform: translateX(-5px);
+		transition: all 0.1s linear;
+	}
+}
+
+.todo + .todo {
+	margin-top: 1rem;
+}
+
+.todo:not(.completed) {
+	order: 1;
+	animation: undone 0.5s;
+}
+.todoDone {
+	order: 2;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.todo.completed {
+	order: 3;
+	animation: done 0.5s;
+}
+
+.todo-item {
+	flex: 1;
+	padding: 0.5rem 1rem;
+}
+.completed {
+	text-decoration: line-through;
+	opacity: 30%;
+}
+.todoApp form {
+	& input {
+		border: 0;
+		outline: none;
+		background-color: #8ec5fc;
+		background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+		box-shadow: 2px 2px 2px #191919;
+		padding: 2rem 2rem;
+		border-radius: 0.5rem;
+		border-top: 0.1px solid rgb(241, 213, 213);
+		font-size: 16px;
+		letter-spacing: 0.075rem;
+		width: calc(100% - 1rem);
+		// margin: 1rem 1rem;
+	}
+}
+
+.done {
+	order: 3;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+@keyframes done {
+	0% {
+		opacity: 0;
+		background-color: rgba(255, 255, 255, 0.4);
+		transform: translateY(20px);
+	}
+	50% {
+		opacity: 1;
+		background-color: rgba(255, 255, 255, 0.4);
+	}
+}
+
+@keyframes undone {
+	0% {
+		opacity: 0;
+		background-color: rgba(255, 255, 255, 0.4);
+		transform: translateY(-20px);
+	}
+	50% {
+		opacity: 1;
+		background-color: rgba(255, 255, 255, 0.4);
+	}
+}
+
+// [appTodo] -- end.

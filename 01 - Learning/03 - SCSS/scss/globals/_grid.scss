@@ -1,0 +1,6 @@
+@use 'variables' as v;
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;    
+}

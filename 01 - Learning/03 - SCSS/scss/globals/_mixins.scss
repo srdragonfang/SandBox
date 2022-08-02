@@ -1,0 +1,21 @@
+@mixin flexbox($a, $b) {
+    display: flex;
+    flex-direction: $a;
+    align-items: center;
+    justify-content: $b;
+}
+
+@mixin gridbox($a) {
+    display: grid;
+    gap: $a;
+}
+
+@mixin fullbox {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin themeMode {
+    background: #191919;
+    color: #f9f9f9;
+}

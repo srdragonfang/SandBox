@@ -1,0 +1,4 @@
+# Install
+1. Microsoft Store -> install ubunto app
+2. powershell -> wsl --install
+2.1 -> Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux

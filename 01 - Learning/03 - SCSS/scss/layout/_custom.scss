@@ -1,0 +1,91 @@
+@use '../globals' as g;
+
+.section-wrapper {
+	height: 100vh;
+	// width: 100vw;
+	overflow: hidden;
+	@include g.flexbox(row, flex-start);
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+
+
+.btn {
+	outline: none;
+	border: 0;
+}
+
+.section {
+	width: 100vw;
+	height: 100vh;
+}
+
+// section-row
+.section-row {
+	padding: 10rem;
+	@include g.flexbox(row, space-around);
+
+    & .main-left {
+        width: 65%;
+        height: 100%;
+        @include g.flexbox(column, center);
+    }
+
+    & .main-right {
+        @include g.flexbox(column, flex-end);
+        width: 35%;
+        height: 100%;
+        position: relative;
+    }
+}
+
+
+.section-col {
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 1rem 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	@include g.flexbox(column, flex-start);
+
+    &.main-left {
+        width: 80%;
+        height: 100%;
+        border: 2px groove goldenrod;
+        @include g.flexbox(row, flex-start);
+    }
+}
+
+
+
+
+
+
+.btn {
+	&:hover {
+		transform: scale(1.2);
+	}
+
+	&-func {
+		border: 0;
+		outline: none;
+		margin: 0.5rem;
+		padding: 0.5rem;
+		font-size: 20px;
+		font-weight: 600;
+		letter-spacing: 0.075rem;
+		background-color: goldenrod;
+		color: #f9f9f9;
+	}
+}
+
+.hide {
+	display: none !important;
+}
+.show {
+	display: flex !important;
+}

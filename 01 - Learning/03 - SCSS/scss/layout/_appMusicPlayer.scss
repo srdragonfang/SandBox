@@ -1,0 +1,396 @@
+@use '../globals' as g;
+/* -------------------------------------------------------------------------- */
+/*                               musicPlayerApp                               */
+/* -------------------------------------------------------------------------- */
+.app-musicPlayer {
+	@include g.flexbox(none, center);
+	position: relative;
+	z-index: 1;
+}
+.player {
+	background-image: var(--bg-gradient);
+	width: 360px !important;
+	height: 500px;
+	box-shadow: 2px 8px 16px #191919;
+	padding: 3rem 1rem;
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: -20px;
+		right: -20px;
+		z-index: -1;
+		background-image: var(--bg-gradient);
+		width: 360px;
+		height: 500px;
+		box-shadow: 2px 8px 16px #191919;
+	}
+	&:hover .dashboard {
+		animation: dashboard-hover 1s;
+		z-index: 1;
+	}
+
+	// set progressBar style
+	&-bar {
+		width: 110px;
+		height: 10px;
+		padding: 0.5rem;
+		border-radius: 15px 0 0 15px;
+        background: #191919;
+		box-shadow: 0px 2px 8px #fff;
+		position: absolute;
+		right: -15px;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 1;
+		@include g.flexbox(none, none);
+
+		// &:before {
+		// 	content: '';
+		// 	width: 9px;
+		// 	height: 9px;
+		// 	border-radius: 50%;
+		// 	position: absolute;
+		// 	left: 0px;
+		// }
+		&:after {
+			content: '';
+			width: 30px;
+			height: 20px;
+			border-radius: 10px 0 0 10px;
+            z-index: 1;
+            
+			position: absolute;
+			right: -10px;
+            background-image: var(--bg-gradient);
+            border: 5px solid #191919;
+            box-shadow: 0px 1px 2px #191919;
+			// box-shadow: 2px 2px 8px #fff;
+		}
+	}
+	// set progressBar animation
+	& .progressBar {
+		animation: playerBar;
+	}
+	@keyframes playerBar {
+		0% {
+			transform: rotate(60deg);
+			transform-origin: right;
+		}
+		100% {
+			transform: rotate(0deg);
+			transform-origin: right;
+		}
+	}
+}
+
+.player__top {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	z-index: 4;
+
+	// track artist
+	& .album__info-artist {
+		margin-right: 2rem;
+		transform: rotate(180deg);
+		font-weight: 600;
+		font-size: 3.5rem;
+		opacity: 0.7;
+		line-height: 1.3em;
+		height: 300px;
+		overflow: hidden;
+		writing-mode: vertical-lr;
+		// text-orientation:upright;
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	// track thumb
+	& .player-cover {
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		margin-left: -70px;
+		flex-shrink: 0;
+		position: relative;
+		z-index: 1;
+
+		&__item {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			box-shadow: 2px 8px 16px #191919;
+
+			&::before {
+				content: '';
+				height: calc(100% + 40px);
+				width: calc(100% + 40px);
+				position: absolute;
+				top: -20px;
+				left: -20px;
+				transform: scale(0.9);
+				background: inherit;
+				display: block;
+				z-index: 1;
+				opacity: 0.9;
+				filter: blur(10px);
+				border-radius: 50%;
+			}
+			&::after {
+				content: '';
+				background: inherit;
+				width: 100%;
+				height: 100%;
+				box-shadow: 0px 10px 40px 0px rgba(76, 70, 124, 0.5);
+				display: block;
+				z-index: 2;
+				position: relative;
+				top: -27%;
+				border-radius: 50%;
+			}
+		}
+
+		& .cd-inner {
+			position: relative;
+			top: calc(50% - 40px) !important;
+			left: calc(50% - 40px) !important;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			outline: none;
+			border: 25px solid #191919;
+			display: flex;
+			background: #ddd4ff;
+			z-index: 101;
+		}
+	}
+}
+
+// audio control
+
+#audio {
+	width: 100%;
+}
+.progress {
+	width: 240px;
+	padding: 3rem 0 3rem 3rem;
+	user-select: none;
+	// background-color: brown;
+
+	& input[type='range'] {
+		background: transparent;
+		height: 38px;
+		width: 100%;
+		-webkit-appearance: none;
+	}
+
+	& input[type='range']::-webkit-slider-runnable-track {
+		width: 100%;
+		height: 5px;
+		cursor: pointer;
+		box-shadow: 0px 0px 6px #000000;
+		background: #191919;
+		border-radius: 5px;
+		border: 1px solid #000000;
+	}
+	& input[type='range']::-webkit-slider-thumb {
+		box-shadow: 0px 0px 6px #000000;
+		border: 1px solid #000000;
+		height: 15px;
+		width: 15px;
+		border-radius: 23px;
+		background: #191919;
+		cursor: pointer;
+		-webkit-appearance: none;
+		margin-top: -6px;
+	}
+}
+
+.buttons {
+	@include g.flexbox(row, space-between);
+	// width: 80%;
+}
+.buttons + .buttons {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+.audio-controll-button {
+	@include g.flexbox(none, center);
+	width: 30px;
+	height: 30px;
+	outline: none;
+	border: 0;
+	font-size: 2.5rem;
+	background: transparent;
+}
+.player .fa-pause {
+	display: none;
+}
+
+#randomTrack.active {
+	color: #f9f9f9;
+}
+#repeatTrack.active {
+	color: #f9f9f9;
+}
+#favTrack.active {
+	color: brown;
+}
+
+// track title
+.album__info-name {
+	font-size: 2.5rem;
+	font-weight: bold;
+	line-height: 1.3em;
+	white-space: nowrap;
+}
+
+/* --------------------------------musicPlayer-app > playlist -------------------------------- */
+
+.dashboard {
+	position: relative;
+	right: 300px;
+	width: 300px;
+	height: 440px;
+
+	background-image: url('/assets/images/bg-3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 3px groove goldenrod;
+	box-shadow: 2px 8px 16px #191919;
+
+	color: goldenrod;
+	font-weight: bold;
+	letter-spacing: 1px;
+
+	transition: all 0.3s ease-in-out;
+	overflow-y: scroll;
+	z-index: -1;
+}
+
+.playlist {
+	width: 100%;
+	height: auto;
+}
+
+/* --------- musicPlayer-app > playlist > button - toggle - playlist -------- */
+.btn-playlist {
+	& .fa-xmark {
+		display: none;
+	}
+}
+
+/* ------------- musicPlayer-app > playlist > playlist-animation ------------ */
+.show-playlist {
+	right: 100px;
+	animation: dashboard-show 1.5s;
+	z-index: 1;
+}
+.hide-playlist {
+	right: 300px;
+	animation: dashboard-hide 1.5s;
+	z-index: -1;
+}
+
+@keyframes dashboard-show {
+	0% {
+		right: 300px;
+		z-index: -1;
+	}
+	50% {
+		right: 0;
+		z-index: -1;
+	}
+	75% {
+		right: -15px;
+		z-index: -1;
+	}
+	100% {
+		right: 100px;
+		z-index: 1;
+	}
+}
+
+@keyframes dashboard-hide {
+	0% {
+		right: 120px;
+		z-index: 1;
+	}
+	50% {
+		right: -15px;
+		z-index: -1;
+	}
+	75% {
+		right: 0px;
+		z-index: -1;
+	}
+	100% {
+		right: 300px;
+		z-index: -1;
+	}
+}
+
+@keyframes playing {
+	0% {
+		transform: translateX(-50px);
+	}
+	50% {
+		transform: translateX(100px);
+	}
+	100% {
+		transform: translateX(-100px);
+	}
+}
+
+/* ------------------- musicPlayer-app > playlist > tracks ------------------ */
+.track {
+	padding: 1rem 3rem 1rem 3rem;
+	font-size: 16px;
+	overflow: hidden;
+	cursor: pointer;
+	border-bottom: 0.1px solid goldenrod;
+
+	&:hover,
+	&.active {
+		background-image: var(--bg-gradient);
+	}
+}
+.track.active .track-item {
+	animation: playing 30s infinite;
+}
+
+@keyframes textclip-artist {
+	to {
+		background-position: center 200%;
+	}
+}
+
+.animate-textClip {
+	background-image: var(--text-gradient);
+	text-transform: uppercase;
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	// color: #fff;
+	background-clip: text;
+	// text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 2s linear infinite;
+	display: inline-block;
+}
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}

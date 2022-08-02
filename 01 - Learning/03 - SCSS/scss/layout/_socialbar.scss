@@ -1,0 +1,63 @@
+@use '../globals' as g;
+
+// * START >>> [SOCIALBAR]
+.socialBar {
+    // background: #f9f9f9;
+    @include g.fullbox;
+	@include g.flexbox(column, none);
+
+	&-bottom {
+        width: 100%;
+		height: 10rem;
+		padding: 0 3rem;
+        background: #191919;
+        color: #f9f9f9;
+		border-top: 1px groove goldenrod;
+		gap: 1rem;
+
+        // @include themeMode;
+		@include g.flexbox(row, space-between);
+
+		&-info {
+			flex: 1;
+			@include g.flexbox(row, space-between);
+		}
+	}
+	&-list {
+		border-left: 1px groove goldenrod;
+		padding: 0.5rem 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	&-item a {
+		color: inherit;
+        border: dashed 1px transparent;
+
+		&:hover {
+			border: dashed 1px goldenrod;
+		}
+	}
+	&-top {
+		flex: 1;
+
+        & p {
+            font-size: 3rem;
+            font-weight: 600;
+            text-shadow: 2px 4px 8px #191919;
+        }
+
+        & .email {
+            font-size: 5rem;
+            text-shadow: 2px 4px 8px #191919;
+        }
+        @include g.flexbox(column, center);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.socialBar {
+		padding: 0 1rem;
+	}
+}

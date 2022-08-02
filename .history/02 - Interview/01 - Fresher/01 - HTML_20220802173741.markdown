@@ -1,0 +1,30 @@
+1. DOM trong HTML là gì?
+DOM (The Document Object Model) là một giao diện lập trình cho các document HTML. Nó đại diện cho trang để các chương trình có thể thay đổi cấu trúc, kiểu và nội dung của tài liệu. DOM đại diện cho tài liệu dưới dạng các nút và đối tượng.
+
+2. Điểm khác nhau của thẻ <span>  và <div> là gì?
+span là phần tử nội tuyến (inline).
+
+div là phần tử khối (block).
+
+Bạn nên dùng các thẻ div để chứa (bọc) các phần của tài liệu, còn các thẻ span để chứa các phần nhỏ của văn bản, hình ảnh, v…v…
+
+Lưu ý: Không được đặt một phần tử cấp khối trong một phần tử nội tuyến.
+
+Ví dụ:
+
+<div>Hi<span>I'm the start of the span element <div>I'm illegal</div> I'm the end of the span</span> Bye I'm the end of the div</div>
+
+3. Các thẻ Meta là gì?
+Thẻ meta là các đoạn văn bản mô tả nội dung của trang; các thẻ meta không xuất hiện trên chính trang mà chỉ xuất hiện trong mã nguồn của trang.
+
+Các thẻ meta về cơ bản chính là các mô tả nội dung nhỏ giúp cho các công cụ tìm kiếm biết nội dung của một trang web.
+
+Ví dụ:
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Description search engines use">
+<meta name="keywords" content="Keywords, of, your, page">
+<meta name="author" content="Me">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
