@@ -1,334 +1,290 @@
-<style type="text/css">
-    details {
-    font-size: 14px;
-    line-height: 1.5;
-    }
-    textarea {
-        resize: none; 
-        font-size: 16px; 
-        line-height: normal; 
-        padding: 1rem;
-        background: transparent;
-        color: #fff;
-    }
-</style>
+---
+title: "The Lullaby Of RedEyes"
+author: "S.R Dragonfang"
+date: "August 02, 2022"
+---
 
-<div align="center">
-    <h1>HTML</h1>
+<div align="center" style="margin-top: 10px;">
+    The Lullaby Of Soknmaru
 </div>
 
-# <div align="center" style="font-size: 16px; font-weight: bold; color: red;">HTML</div>
+# PART I: Hyper Text Markup Language
 
-# Tag Name
-
-### Điểm khác nhau của thẻ `<span>` và `<div>` là gì?
-
-<textarea cols="40" rows="5"></textarea>
-</textarea>
-
-<details>
-
--   span là phần tử nội tuyến (inline).
-
--   div là phần tử khối (block).
-
--   Bạn nên dùng các thẻ div để chứa (bọc) các phần của tài liệu, còn các thẻ span để chứa các phần nhỏ của văn bản, hình ảnh, v…v…
-
--   Lưu ý: Không được đặt một phần tử cấp khối trong một phần tử nội tuyến.
-
-Ví dụ:
-
-`<div>Hi<span>I'm the start of the span element <div>I'm illegal</div> I'm the end of the span</span> Bye I'm the end of the div</div>`
-
-</details>
-
----
-
-### Các thẻ Meta là gì?
-
-<textarea cols="40" rows="5">
-</textarea>
-
-<details>
-Thẻ meta là các đoạn văn bản mô tả nội dung của trang; các thẻ meta không xuất hiện trên chính trang mà chỉ xuất hiện trong mã nguồn của trang.
-
-Các thẻ meta về cơ bản chính là các mô tả nội dung nhỏ giúp cho các công cụ tìm kiếm biết nội dung của một trang web.
-
-Ví dụ:
-
-```html
-<head>
-	<meta charset="UTF-8" />
-	<meta name="description" content="Description search engines use" />
-	<meta name="keywords" content="Keywords, of, your, page" />
-	<meta name="author" content="Me" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-```
-
-</details>
-
----
-
+## <u>I. INTRODUCTION</u>
 ### HTML là gì?
 
-<textarea cols="40" rows="5">
-</textarea>
+<details>
+
+*Translate*: **Ngôn ngữ đánh dấu siêu văn bản.**
+
+* Được sử dụng để định dạng và hiển thị văn bản trên trình duyệt.
+* Xương sống của một website
+Hyper Text: siêu văn bản có nghĩa là "văn bản trong văn bản". Một văn bản có chứa một liên kết (link) là một siêu văn bản. Mỗi lần bản click vào một từ từ đó đưa bạn tới một trang web mới, đó là siêu văn bản.
+
+Markup Language: ngôn ngữ đánh dấu là một ngôn ngữ lập trình được sử dụng để giúp văn bản dễ tương tác và linh động hơn. Nó có thể đặt văn bản vào trong các ảnh, bảng, liên kết...
+</details>
+
+--- 
+### Các thẻ trong HTML?
 
 <details>
-   HTML viết tắt của Hyper Text Markup Language (ngôn ngữ đánh dấu siêu văn bản). Nó là một ngôn ngữ của World Wide Web. Đây là một ngôn ngữ định dạng văn bản chuẩn được sử dụng để tạo và hiển thị các trang trên Web.
+Chứa 3 phần chính:
 
+    1 - thẻ mở
+    2 - thẻ nội dung.
+    3 - thẻ đóng
+
+Có một số thẻ có thẻ mở không cần thẻ đóng.
+
+Các loại thẻ: 
+
+    1 - HTML Meta
+        DOCTYPE, title , link, meta, style
+    2 - HTML Văn bản
+        <p>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+        <br> = là thẻ xuống dòng
+        <strong> = in đậm
+        <em> = in nghiêng
+        <code>
+        <abbr>
+        <acronym>
+        <address>
+        <bdo>
+        <blockquote>
+        <cite>
+        <q>
+        <ins>
+        <del>
+        <dfn>
+        <kbd>
+        <pre>
+        <samp>
+        <var>
+    3 - HTML links
+        <a href=""></a>
+        <base>
+    4 - HTML hình ảnh và đối tượng
+        <img src="http://placehold.it/500x300" alt="place">
+        <area>
+        <map>
+        <param>
+        <object>
+    5 - HTML table
+        <table>	Định nghĩa bảng.
+        <tr>	Định nghĩa một hàng trong một bảng.
+        <th>	Định nghĩa phần header (dòng đầu tiên) của bảng.
+        <td>	Định nghĩa 1 ô của bảng.
+        <caption>	Định nghĩa phụ đề bảng.
+        <colgroup>	Chỉ định một nhóm của một hoặc nhiều cột trong một bảng để định dạng.
+        <col>	Được sử dụng với thẻ <colgroup> để chỉ định thuộc tính cột cho mỗi cột.
+        <tbody>	Được sử dụng để nhóm nội dung body trong một bảng.
+        <thead>	Được sử dụng để nhóm nội dung header trong một bảng.
+        <tfooter>	Được sử dụng để nhóm nội dung footer trong một bảng.
+        
+    6 - HTML form
+        form
+        input
+        textarea
+        select
+        option
+        optgroup
+        button
+        label
+        fieldset
+        legend
+    7 - HTML Scripting
+        script
+        noscript
 </details>
 
 ---
 
-### Thẻ HTML là gì?
-
-<textarea cols="40" rows="5">
-</textarea>
+### Định dạng trong HTML
 
 <details>
-
-Các thẻ HTML bao gồm ba phần: mở thẻ, nội dung và đóng thẻ. Một số thẻ là thẻ mở, có nghĩa là không cần phải đóng thẻ.
-
-Tài liệu HTML được tạo ra từ hai điều sau:
-
-Nội dung
-Các thẻ
-Trong đó, nội dung được đặt giữa các thẻ để hiển thị dữ liệu trên trang web.
-
-</details>
-
----
-
-### Có phải tất cả các thẻ HTML đều có thẻ đóng?
-
-<textarea cols="40" rows="5">
-</textarea>
-
-<details>
-
-Không. Có một vài thẻ trong html mà không cần phải đóng thẻ ví dụ thẻ `<image>, <br>, <hr>...`
-
-</details>
-
----
-
-### Các danh sách phổ biến được sử dụng khi thiết kế một trang là gì?
-
-<textarea cols="40" rows="5">
-</textarea>
-
-<details>
-Có nhiều danh sách phổ biến được sử dụng để thiết kế một trang. Có loại danh sách sau đây:
-
-Danh sách có thứ tự
-Danh sách không có thứ tự
-Danh sách menu
-Danh sách từ điển
-Danh sách định nghĩa
-
-</details>
-
----
-
-### Sự khác nhau giữa các phần tử và các thẻ trong HTML
-
-<textarea cols="40" rows="5">
-</textarea>
-
-<details>
-   Các thành phần HTML giao tiếp với trình duyệt để hiển thị văn bản. Khi các phần tử được bao quanh bởi dấu ngoặc, chúng sẽ tạo thành các thẻ HTML. Hầu như mọi lúc, các thẻ đi theo cặp và có nội dung bên trong.
-<textarea cols="40" rows="5">
-</textarea>
-
-<details>
-
-### HTML ngữ nghĩa là gì?
-
-   <textarea cols="40" rows="5">
-   </textarea>
-
-   <details>
-   HTML ngữ nghĩa là một kiểu code. Đó là việc sử dụng các thẻ HTML để củng cố ngữ nghĩa hoặc ý nghĩa của nội dung. Ví dụ: Trong thẻ ngữ nghĩa HTML <b> </b> không được sử dụng để hiển thị dòng chữ đậm, cũng như thẻ <i> </i> không được sử dụng để hiển thị cho chữ nghiêng. Thay vào đó chúng ta sử dụng các thẻ <strong></strong> and <em></em>.
-</details>
-
----
-
-### Bản đồ hình ảnh là gì?
-
-<textarea cols="40" rows="5">
-</textarea>
-
-<details>
-   Bản đồ hình ảnh cho phép bạn liên kết nhiều trang web khác nhau bằng một hình ảnh duy nhất. Bạn có thể định nghĩa mỗi phần của một bản đồ hình ảnh là các hình dạng khác nhau.
-</details>
-
----
-
-8. Làm thế nào để chèn một biểu tượng bản quyền vào trang web?
-   <textarea cols="40" rows="5">
-   </textarea>
-
- <details>
-    Có thể chèn một biểu tượng bản quyền bằng cách sử dụng &copy; or &#169; vào file HTML
- </details>
-
----
-
-9. Làm thế nào để giữ các phẩn tử danh sách thẳng trong file HTML?
-<textarea cols="40" rows="5">
-</textarea>
-
-    <details>
-    Bạn có thể giữ các phẩn tử danh sách thẳng bằng cách sử dụng indent.
- </details>
-
----
-
-10. Một siêu liên kết (hyperlink) chỉ áp dụng cho văn bản đúng không?
-    <textarea cols="40" rows="5">
-    </textarea>
-
-<details>
-    Không. Siêu liên kết được áp dụng cho cả văn bản và hình ảnh.
-</details>
-
----
-
-11. Style sheet là gì?
-    <textarea cols="40" rows="5">
-    </textarea>
-
-<details>
-Một style sheet được sử dụng để xây dựng kiểu dáng thích hợp, thiết kế tốt cho trang web. Bạn có thể thêm các mẫu này vào một số trang web khác nhau.
-</details>
-
----
-
-### Bạn có thể tạo một văn bản nhiều màu trên một trang web?
-
-<textarea cols="40" rows="5">
-</textarea>
-
-<details>
-Có. Để tạo văn bản nhiều màu trên một trang web bạn có thể sử dụng thẻ font cho từng văn bản cụ thể mà bạn muốn.
 
 ```html
-    <font color ="color"></font> 
-```
-</details>
+    <p>
+        <b>In đậm</b>
 
----
+        <i>In nghiêng</i>
 
-### Marquee là gì?
+        <i>Gạch chân</i>
 
-  <textarea cols="40" rows="5">
-  </textarea>
+        <mark>Highlight text</mark>
 
-  <details>
-    Thẻ marquee trong HTML không phải là một thẻ HTML tiêu chuẩn, được sử dụng để di chuyển chữ hoặc ảnh theo chiều ngang hoặc dọc một cách tự động. Có nghĩa là bạn có thể làm cho chữ hoặc ảnh di chuyển lên trên, xuống dưới, sang trái, sang phải một cách tự động.
-</details>
+        <strike>Chữ bị kẻ ngang</strike>
 
----
+        <tt>Các kí tự có độ rộng bằng nhau </tt>
 
-14. Có bao nhiêu thẻ được sử dụng để phân tách các đoạn văn?
-    <textarea cols="40" rows="5">
-    </textarea>
+        <sup>Mũ trên</sup>
 
-<details>
-    Có ba thẻ được sử dụng để tách văn bản. Thẻ <br> thường được sử dụng để xuống dòng, các thẻ khác là <p> và <blockquote>
-</details>
+        <sub>Mũ dưới</sub>
 
----
+        <del>Chữ bị xóa - gạch ngang</del>
 
-15. Làm thế nào để tạo ảnh nền cho một trang web?
-    Để tạo một hình ảnh nền trên một trang web, bạn nên đặt mã thẻ sau đây sau thẻ </head>.
+        <ins> Đây là chữ được chèn vào.</ins>
 
-?
-1
+        <big> Chữ to hơn. </big>
 
-<body background = "image.jpg">  
-Thay thế "image.jpg" thành đường dẫn đến hình ảnh của bạn.
-</details>
+        <small> Chữ nhỏ hơn. </small>
 
----
+    </p>   
 
-### Các phần tử rỗng là gì?
-
-<textarea cols="40" rows="5">
-</textarea>
-
-<details>
-Phần tử HTML không có nội dung được gọi là phần tử rỗng. 
-Ví dụ `<br>, <hr>,...`
-</details>
-
----
-
-### Thẻ span được sử dụng làm gì? Lấy một ví dụ.
-
-#tag
-
-<textarea cols="40" rows="5">
-</textarea>
-
-<details>
-Thẻ span là thẻ trung tính được sử dụng làm những việc sau:
-Để thêm màu vào văn bản.
-Để thêm nền trên văn bản.
-Đánh dấu bất kỳ văn bản bằng màu nào. vv
-Ví dụ:
-```html
-<p>  
-  <span style="color:#ffffff;">  
-    Sử dung thẻ span thay đổi màu văn bản.
-  </span>  
-</p>
-```
-</details>
-
----
-
-### Sử dụng thẻ iframe để làm gì?
-
-<textarea cols="40" rows="5">
-</textarea>
-
-<details>
-Thẻ iframe được sử dụng để hiển thị một trang web trong một trang web khác.
-
-```html
-<!-- Cấu trúc: -->
-<iframe src="URL"></iframe>
-<!-- Ví dụ: -->
-<iframe src="demo_iframe.html" width="200px" height="200px"></iframe>
-<!-- Target đến một liên kết: -->
-<iframe src="" name="iframe_a"></iframe>
 ```
 
 </details>
 
 ---
 
-### Canvas trong HTML 5 là gì?
-
-<textarea cols="40" rows="5">
-</textarea>
+### Tiêu đề?
 
 <details>
-Canvas là một khoảng trống HTML được sử dụng để vẽ đồ họa.
-</details>
-
-# Document Objects Model
-
-### DOM trong HTML là gì?
-
-<textarea cols="40" rows="5">
-</textarea>
-
-<details>
-    DOM (The Document Object Model) là một giao diện lập trình cho các document HTML. Nó đại diện cho trang để các chương trình có thể thay đổi cấu trúc, kiểu và nội dung của tài liệu. DOM đại diện cho tài liệu dưới dạng các nút và đối tượng.
+    h1, h2, h3, h4, h5, h6
 </details>
 
 ---
+
+### List trong HTML
+
+<details>
+Danh sách trong HTML được sử dụng để hiển thị danh sách thông tin. Có ba loại khác nhau của danh sách HTML:
+
+    1 - Danh sách có thứ tự hay danh sách có đánh số (ol)
+<details>
+
+    type="1"	Đây là kiểu mặc định, ở đó các danh mục được đánh bằng các con số.
+
+    type="I"	Với kiểu này, danh mục được đánh bằng các ký tự La Mã.
+
+    type="i"	Với kiểu này, danh mục được đánh bằng các ký tự La Mã thường.
+ 
+    type="A"	Với kiểu này, danh mục được đánh bằng các ký tự chữ hoa.
+ 
+    type="a"	Với kiểu này, danh mục được đánh bằng các ký tự chữ thường.
+
+```html
+<!-- example -->
+<ol type="I">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ol>
+
+<ol type="I" start="5">  
+ <li>HTML</li>  
+ <li>Java</li>  
+ <li>JavaScript</li>  
+ <li>SQL</li>  
+</ol>
+
+<!-- thuộc tính start = bắt đầu từ vị trí -->
+<!-- I = 1, V = 5 -->
+```
+</details>
+    2 - Danh sách không có thứ tự (ul)
+
+        type="disc"	Dây là kiểu mặc định, danh mục được đánh bằng các ký tự hình tròn.
+
+        type="circle"	Với kiểu này, danh mục được đánh bằng các ký tự đường tròn.
+
+        type="square"	Với kiểu này, danh mục được đánh bằng các ký tự hình vuông.
+
+        type="none"	Với kiểu này, danh mục không được đánh bằng ký tự gì.
+
+    3 - Danh sách mô tả (dl)
+```html
+<dl>  
+  <dt> Bạch Dương </dt>  
+  <dd> - Một trong 12 cung tử vi. </dd>  
+  <dt> Bingo </dt>  
+  <dd> - Là một món ăn </dd>  
+  <dt> Leo </dt>  
+  <dd> - Là một trong 12 cung tử vi. </dd>  
+  <dt> Oracle </dt>  
+  <dd> - Là một tập đoàn công nghệ đa quốc gia. </dd>   
+</dl>  
+```
+
+</details>
+
+---
+---
+---
+## <u>II. FORM</u>
+
+### HTML Form là gì?
+
+<details>
+Một HTML Form là một phần của trang web có chứa các điều khiển như các trường văn bản, các trường mật khẩu, các checkbox, các radio button, submit button, các menu...
+
+HTML Form là phương tiện cho người dùng nhập dữ liệu được gửi đến máy chủ để xử lý.
+</details>
+
+---
+
+### Tại sao sử dụng HTML Form?
+<details>
+HTML Form được sử dụng khi bạn muốn thu thập một số dữ liệu của người truy cập trang web.
+
+Ví dụ: Nếu người dùng muốn mua một số mặt hàng trên online, họ phải điền vào form các thông tin như địa chỉ giao hàng và chi tiết thẻ tín dụng / thẻ ghi nợ để có thể gửi hàng đến địa chỉ đó.
+```html
+<form>  
+  <label for="email">Email: </label>  
+  <input type="email" id="email" name="email"/> <br/>  
+</form>
+<!-- for sẽ được gán bởi tên của name -->
+```
+</details>
+
+## <u>HTML Methods</u>
+
+**id**	
+> Chỉ định một id duy nhất của một phần tử
+
+**class**	
+> Chỉ định một hoặc nhiều tên class cho một phần tử (tham chiếu đến một class trong một style sheet)
+ 
+**contenteditable**
+> Chỉ định nội dung có được sửa hay không
+
+**contextmenu**
+> Chỉ định một menu ngữ cảnh cho một phần tử. Menu đó hiển thị khi người dùng right-clicks vào phần tử đó
+
+**data-***
+> Được sử dụng để lưu trữ dữ liệu tùy chỉnh cho trang hoặc ứng dụng
+
+**dir**
+> Chỉ định hướng của văn bản cho nội dung trong một phần tử
+
+**draggable**
+> Chỉ định một phần tử có thể kéo thả được hay không
+
+**dropzone**
+> Chỉ định liệu dữ liệu được kéo được sao chép, di chuyển hoặc liên kết, khi bị thả ra
+
+**hidden**
+> Được sử dụng để ẩn một phần tử
+
+
+**lang**
+> Chỉ định ngôn ngữ của nội dung của phần tử
+
+**spellcheck**
+> Chỉ định xem phần tử có được kiểm tra chính tả và ngữ pháp hoặc không
+
+**style**	
+> Chỉ định một kiểu CSS nội tuyến cho một phần tử
+
+**tabindex**
+> Chỉ định thứ tự tab của một phần tử
+
+title
+> Chỉ định thông tin mở rộng về một phần tử
+
+**translate**
+> Chỉ định nội dung của một phần tử phải được dịch hay không
+
+**accesskey**
+> Chỉ định một phím tắt để activate/focus một phần tử
